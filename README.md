@@ -4,7 +4,7 @@ A collection of helpful and easy to install bash scripts.
 
 ## Setup
 
-To setup these bash scripts and use them, just use the provided [`setup`] file at the root of this project.
+To setup these bash scripts and use them, just use the provided [`setup`](setup) file at the root of this project.
 
 ```bash
 cd /path/to/ibmi-bash-tools
