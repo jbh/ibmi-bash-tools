@@ -1,4 +1,4 @@
-# ibmi-bash-tools
+# IBM i BASH Tools
 
 A collection of helpful and easy to install bash scripts for the IBM i.
 
