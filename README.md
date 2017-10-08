@@ -1,4 +1,4 @@
-# ibmi-bash-tools
+# IBM i BASH Tools
 
 A collection of helpful and easy to install bash scripts for the IBM i.
 
@@ -25,7 +25,7 @@ PATH=$PATH:~/bin
 
 ## Current Tools
 
-#### [apachectl](bin/apachectl.sh)
+#### [apachectl.sh](bin/apachectl.sh)
 
 A script that mimics the [`apachectl`](https://httpd.apache.org/docs/2.4/programs/apachectl.html) CLI on &ast;nix
 systems. It currently only has `start`, `stop`, and `restart` as implemented options. Unlike the original `apachectl`,
@@ -34,3 +34,12 @@ the user needs to specify a server to target, as the IBM i has multiple instance
 Use: `apachectl.sh start|stop|restart <server>`
 
 e.g. `apachectl.sh restart zendsvr6`
+
+#### [db2.sh](bin/db2.sh)
+
+A script that behaves like other SQL CLIs. The user can repeatedly run SQL statements until they enter `exit` or
+`exit;`. It even supports history, so the user can use the up and down arrows to cycle through past SQl statements.
+
+Use: `db2.sh`
+
+e.g. `db2.sh`
