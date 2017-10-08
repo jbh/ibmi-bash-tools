@@ -12,7 +12,8 @@ print_use() {
 if [ $# -eq 0 ]
 then
   # Loop over SQL and enable history of SQL (up and down arrows)
-  while IFS= read -e -p "> " sql; do
+  while IFS= read -e -p "> " sql
+  do
     history -s "$sql"
 
     # Process SQL if it doesn't start with exit
