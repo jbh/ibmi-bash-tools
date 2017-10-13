@@ -21,8 +21,7 @@ then
       system "ENDTCPSVR SERVER(*HTTP) HTTPSVR($server)"
       ;;
     restart)
-      system "ENDTCPSVR SERVER(*HTTP) HTTPSVR($server)"
-      system "STRTCPSVR SERVER(*HTTP) HTTPSVR($server)"
+      system "STRTCPSVR SERVER(*HTTP) RESTART(*HTTP) HTTPSVR($server)"
       ;;
     *)
         print_use
